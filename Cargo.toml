@@ -1,0 +1,21 @@
+[package]
+name = "trickster"
+authors = ["Code-Barru"]
+description = "A simple CLI tool to obfuscate or encrypt a payload."
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+## UI & CLI
+clap = { version = "4.5.29", features = ["derive", "help", "color"] }
+colored = "3.0.0"
+
+## Encryption
+aes-gcm = "0.10.3"
+
+## Obfuscation
+mac_address = "1.1.8"
+uuid = { version = "1.13.1", features = ["v4"] }
+
+## Others
+rand = "0.9.0"
