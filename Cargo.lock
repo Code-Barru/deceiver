@@ -212,6 +212,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "deceiver"
+version = "1.0.0"
+dependencies = [
+ "aes-gcm",
+ "clap",
+ "colored",
+ "mac_address",
+ "rand",
+ "uuid",
+]
+
+[[package]]
 name = "generic-array"
 version = "0.14.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -425,18 +437,6 @@ dependencies = [
  "proc-macro2",
  "quote",
  "unicode-ident",
-]
-
-[[package]]
-name = "trickster"
-version = "1.0.0"
-dependencies = [
- "aes-gcm",
- "clap",
- "colored",
- "mac_address",
- "rand",
- "uuid",
 ]
 
 [[package]]

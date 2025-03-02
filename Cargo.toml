@@ -1,5 +1,5 @@
 [package]
-name = "trickster"
+name = "deceiver"
 authors = ["Code-Barru"]
 description = "A simple CLI tool to obfuscate or encrypt a payload."
 version = "1.0.0"

@@ -11,7 +11,7 @@ pub struct Args {
     #[arg(
         long,
         value_enum,
-        help = "Encryption method: aes, rc6, xor",
+        help = "Encryption method [aes, rc6, xor]",
         hide_possible_values = true
     )]
     pub encryption: Option<Encryption>,
@@ -19,12 +19,12 @@ pub struct Args {
     #[arg(
         long,
         value_enum,
-        help = "Obfuscation method: ipv4, ipv6, uuid, mac_addr",
+        help = "Obfuscation method [ipv4, ipv6, uuid, mac_addr]",
         hide_possible_values = true
     )]
     pub obfuscation: Option<Obfuscation>,
 
-    #[arg(help = "The key to encrypt the shellcode (path or raw 32 bytes)")]
+    #[arg(help = "The key to encrypt the shellcode (path or 32 hexa char)")]
     pub key: Option<String>,
 
     #[arg(long, short, help = "The output file", default_value = "output.rs")]
