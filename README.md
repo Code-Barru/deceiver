@@ -1,5 +1,3 @@
-![Deceiver Logo](banner.webp)
-
 ## Description
 
 > [!note]
